@@ -1,0 +1,114 @@
+.footer {  
+    background-color: $darkSlateGray;
+    display: flex;
+    
+    width: cover;
+    justify-content: center;
+    align-items: center;
+    padding: 7px;
+    
+    
+    .footer-container {
+        @include base-flex-column();   
+        justify-content: center;
+        align-items: center;
+
+        
+        
+
+        .footer-wrapper-top {
+            display: flex;
+  
+            
+            
+            h1 {
+                color: $white;
+                font-size: 20px;
+                font-weight: 600;
+                line-height: 29px;
+               
+            }
+
+            .footer-link {
+                color: $lightGray;
+                font-size: 14px;
+                font-weight: 600;
+                padding-bottom: 15px;
+            }
+
+            .footer-left {
+                @include base-flex-column();
+                padding: 7px;
+
+                .footer-left-links {
+                    display: flex;
+                    flex-direction: row;
+                    padding: 10px;
+                    
+                    .footer-left-links__left {     
+                        @include base-flex-column();
+                        padding: 7px;
+                        
+                    }
+                        
+                    .footer-left-links__right { 
+                        @include base-flex-column();
+                        padding: 7px;
+                    }
+                }
+                
+            }
+            .footer-middle {
+                @include base-flex-column();
+                padding: 7px;
+                margin-left: 7px;
+                margin-right: 7px;
+
+                .h1 {
+                    
+                }
+
+                .footer-middle-links {
+                    display: flex;
+                    flex-direction: row;
+                    
+
+                    .footer-middle-links__left {
+                        @include base-flex-column();
+                        padding: 7px;              
+                    }
+                    .footer-middle-links__right {                       
+                        @include base-flex-column();
+                        padding: 7px;
+                    }
+                }
+            }
+            .footer-right {
+                @include base-flex-column();
+                padding: 7px;
+               
+                .footer-subscribe {
+                    padding-left: 7px;
+                }
+                
+                input {
+                    border-radius: 30px;
+                    height: 30px;
+                    width: 180px;
+                    border: none;
+                }
+                button {
+                    @include base-btn();
+                    height: 30px;
+                    width: 80px;
+                }
+            }
+            
+        }
+            
+        }
+    .footer-wrapper-middle {
+        text-overflow: wrap;
+        padding: 5px;
+    }
+}

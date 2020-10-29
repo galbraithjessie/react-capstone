@@ -1,0 +1,101 @@
+.blog-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+
+    .new-blog-link {
+        position: fixed;
+        right: 0;
+        top: 0.75;
+
+        a {
+            @include base-icon();
+            font-size: 3.75em;
+            cursor: pointer;
+            margin-right: 20px;
+            transition: 0.5s ease-in-out;
+
+            &:hover {
+                color: $lightGreen;
+            }
+        }
+    }
+    
+    h1 {
+        color: $forestGreen;
+        transition: 0.5s ease-in-out;
+
+        &:hover {
+            color: $lightGreen;
+        }
+    }
+
+
+
+
+    .featured-blog-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 20px;
+        padding: 20px;
+
+
+        .featured-blogs {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            align-items: center;
+            justify-content: center;
+            padding: 13px;
+            
+
+            .featured-blog {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding: 13px;
+                
+            }
+
+            h1 {
+                font-size: 18px; 
+                margin-top: 24px;
+                text-decoration: wrap;
+            }
+        }
+    }
+
+    .blog-records {
+        display: flex;
+        flex-direction: column;
+        width: 800px;
+
+        .action-icon {
+            color: $forestGreen;
+            display: flex;
+            justify-content: flex-end;
+
+            svg {
+                font-size: 3rem;
+                
+            }
+        }
+
+        div {
+            padding-bottom: 30px;
+            h1 {
+                padding-left: 15px;
+                margin-bottom: 15px;
+            }
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            font-size: 1.5rem;
+        }
+    }
+}
