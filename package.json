@@ -1,8 +1,9 @@
 {
-  "name": "react-redux-router",
+  "name": "React Capstone Project",
   "version": "1.0.0",
   "engines": {
-    "node": "12.18.2"
+    "node": "12.18.2",
+    "npm": "6.14.8"
   },
   "description": "Basic skeleton codebase for React/Redux/Router applications.",
   "scripts": {
